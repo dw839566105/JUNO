@@ -4,3 +4,6 @@
 test*
 *.txt
 *.ipynb
+*.pdf
+*/trash/*
+	

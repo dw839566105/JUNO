@@ -1,0 +1,16 @@
+.PHONY: all
+
+radius:=$(shell seq 1000 1000 17000)
+
+save_pe:=JUNO_time_test
+
+src_pe:=$(radius:%=$(save_pe)/file_%.h5)
+
+order:=20
+
+all:$(src_pe)
+
+$(save_pe)/file_%.h5:
+	mkdir -p $(save_pe)
+	python3 Time_calib/calib_new.py $* $@ $(order) > logs/Time$*.log 2>&1
+.SECONDARY:
