@@ -6,4 +6,5 @@ test*
 *.ipynb
 *.pdf
 **/trash/*
+*.html
 	
