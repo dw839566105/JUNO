@@ -5,5 +5,5 @@ test*
 *.txt
 *.ipynb
 *.pdf
-*/trash/*
+**/trash/*
 	
